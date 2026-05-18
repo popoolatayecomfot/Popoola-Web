@@ -145,6 +145,51 @@
     </div>
   </footer>
 
+   <!--Form --->
+    <section class="form-section">
+  <h2>Create Account</h2>
+  <form id="signupForm" novalidate>
+    
+    <div class="field">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@email.com">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="08012345678">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Min 6 characters">
+      <small class="error"></small>
+    </div>
+
+    <button type="submit">Sign Up</button>
+    <p class="success" id="successMsg"></p>
+  </form>
+   
+   <!--- Basic DOM Manipulation-->
+  
+   <section class="counter-section">
+  <h2>Simple Counter</h2>
+  <div class="counter-box">
+    <button id="minus">-</button>
+    <span id="count">0</span>
+    <button id="plus">+</button>
+  </div>
+  <button id="reset" class="btn-sm">Reset</button>
+</section>
+
   <script src="script.js"></script>
 </body>
 </html>

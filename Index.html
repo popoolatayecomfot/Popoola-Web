@@ -1,85 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>popoola web- Responsive Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popoola Web | Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="navbar">
     <div class="container nav-container">
-      <div class="logo">Popoola web</div>
+
+      <div class="logo">Popoola Web</div>
+
       <nav class="nav-links" id="navLinks">
         <a href="#features">Features</a>
         <a href="#about">About</a>
         <a href="#pricing">Pricing</a>
         <a href="#contact" class="btn btn-sm">Get Started</a>
       </nav>
-        <button class="theme-toggle" id="themeToggle">🌙</button>
 
-      <button class="hamburger" id="hamburger">☰</button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+
     </div>
   </header>
 
-<section class="hero">
-  <div class="container hero-container">
-    <div class="hero-text">
-      <h1>Build Websites Faster with Popoola Web</h1>
-      <p>I create clean, responsive websites that work smoothly on phones, tablets, and desktops.</p>
-      <div class="hero-btns">
-        <a href="#features" class="btn">See My Work</a>
-        <a href="#pricing" class="btn btn-outline">Contact Me</a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <div class="mockup"></div>
-    </div>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-container">
 
-<section class="features" id="features">
-  <div class="container">
-    <h2>Why Work With Me</h2>
-    <div class="features-grid">
-      <div class="card">
-        <h3>🚄 Fast & Light</h3>
-        <p>Websites load quickly and run smoothly without unnecessary code.</p>
-      </div>
-      <div class="card">
-        <h3>📱 Fully Responsive</h3>
-        <p>Every page looks good on mobile, tablet, and desktop.</p>
-      </div>
-      <div class="card">
-        <h3>🎨 Simple Design</h3>
-        <p>Clean layouts that are easy to use and look professional.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="hero-text">
+        <h1>Build Websites Faster with Popoola Web</h1>
 
-<section class="about" id="about">
-  <div class="container about-container">
-    <div class="about-text">
-      <h2>How I Built This</h2>
-      <p>
-        I started with a mobile-first approach because most people browse on their phones. 
-        For the layout, I used Flexbox to stack elements on small screens and switch to a side-by-side view on desktop.
-      </p>
-      <p>
-        The hardest part was getting the mobile menu to work. I used JavaScript’s classList.toggle 
-        to show and hide the menu when the hamburger button is clicked.
-      </p>
-    </div>
-  </div>
-</section>
+        <p>
+          I create clean, responsive websites that work smoothly on phones,
+          tablets, and desktops.
+        </p>
 
+        <div class="hero-btns">
+          <a href="#features" class="btn">See My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <div class="mockup">
+          <div class="mockup-screen"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+
+      <h2>Why Work With Me</h2>
+
+      <div class="features-grid">
+
+        <div class="card">
+          <h3>🚀 Fast & Light</h3>
+          <p>
+            Websites load quickly and run smoothly without unnecessary code.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📱 Fully Responsive</h3>
+          <p>
+            Every page looks good on mobile, tablet, and desktop.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🎨 Simple Design</h3>
+          <p>
+            Clean layouts that are easy to use and look professional.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-container">
+
+      <div class="about-text">
+        <h2>How I Built This</h2>
+
+        <p>
+          I started with a mobile-first approach because most people browse on
+          their phones. For the layout, I used Flexbox to stack elements on
+          small screens and switch to a side-by-side view on desktop.
+        </p>
+
+        <p>
+          The hardest part was getting the mobile menu to work. I used
+          JavaScript’s <strong>classList.toggle()</strong> to show and hide the
+          menu when the hamburger button is clicked.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+
+      <h2>Pricing</h2>
+
+      <div class="pricing-card">
+        <h3>Starter Website</h3>
+        <p class="price">₦50,000</p>
+
+        <ul>
+          <li>Responsive Design</li>
+          <li>Modern Layout</li>
+          <li>Mobile Friendly</li>
+          <li>Fast Performance</li>
+        </ul>
+
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer" id="contact">
     <div class="container">
-      <p>© 2026 popoola Web. Build by popoola Taye Comfort from Ilorin</p>
+      <p>
+        © 2026 Popoola Web. Built by Popoola Taye Comfort from Ilorin.
+      </p>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
-  </html>
+</html>
